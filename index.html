@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CoastLink Solutions — Websites, VoIP & IT Services | Mobile, AL</title>
+<meta name="description" content="CoastLink Solutions builds websites from $250, installs VoIP phone systems, and handles network infrastructure and IT support for small businesses in Mobile, AL and the Gulf Coast."/>
+
+<!-- Canonical -->
+<link rel="canonical" href="https://coastlinksolutions.com/"/>
+
+<!-- Open Graph (Facebook, LinkedIn previews) -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://coastlinksolutions.com/"/>
+<meta property="og:title" content="CoastLink Solutions — Websites, VoIP & IT Services | Mobile, AL"/>
+<meta property="og:description" content="One partner for everything that keeps your small business running. Websites from $250, VoIP phone systems, network infrastructure, and IT support. Mobile, AL."/>
+<meta property="og:image" content="https://coastlinksolutions.com/og-image.png"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="CoastLink Solutions"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="CoastLink Solutions — Websites, VoIP & IT Services | Mobile, AL"/>
+<meta name="twitter:description" content="One partner for everything that keeps your small business running. Websites from $250, VoIP phone systems, network infrastructure, and IT support. Mobile, AL."/>
+<meta name="twitter:image" content="https://coastlinksolutions.com/og-image.png"/>
+
+<!-- Local SEO -->
+<meta name="geo.region" content="US-AL"/>
+<meta name="geo.placename" content="Mobile, Alabama"/>
+<meta name="geo.position" content="30.6954;-88.0399"/>
+<meta name="ICBM" content="30.6954, -88.0399"/>
+
+<!-- Robots & indexing -->
+<meta name="robots" content="index, follow"/>
+
+<!-- Local Business Schema (Google Rich Results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "CoastLink Solutions",
+  "description": "CoastLink Solutions provides websites, VoIP phone systems, network infrastructure, and IT support for small businesses in Mobile, AL and the Gulf Coast region.",
+  "url": "https://coastlinksolutions.com",
+  "telephone": "+1-251-555-0000",
+  "email": "info@coastlinksolutions.com",
+  "founder": {
+    "@type": "Person",
+    "name": "Steven Mann"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mobile",
+    "addressRegion": "AL",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.6954,
+    "longitude": -88.0399
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Mobile" },
+    { "@type": "State", "name": "Alabama" },
+    { "@type": "AdministrativeArea", "name": "Gulf Coast Region" }
+  ],
+  "priceRange": "$$",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "CoastLink Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Web Design",
+          "description": "Professional small business websites starting at $250. Live within 24 hours, hosted on Cloudflare."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VoIP Phone Systems",
+          "description": "Hosted and on-premise VoIP phone systems for small businesses. BroadSoft and Sangoma platforms."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Network Infrastructure",
+          "description": "Structured cabling, enterprise WiFi, firewall configuration, and network design for businesses."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "IT Support",
+          "description": "Ongoing remote and on-site IT support, workstation maintenance, and vendor coordination."
+        }
+      }
+    ]
+  },
+  "sameAs": [
+    "https://www.facebook.com/coastlinksolutions",
+    "https://www.linkedin.com/company/coastlink-solutions"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --black:   #080c10;
+    --ink:     #0d1117;
+    --panel:   #131920;
+    --border:  #1e2833;
+    --muted:   #4a5a6a;
+    --text:    #8a9ab0;
+    --light:   #c8d8e8;
+    --white:   #eef2f7;
+    --teal:    #00b8a0;
+    --teal2:   #00d4bb;
+    --teal-dim:#003d36;
+    --blue:    #0077cc;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: 'Lora', Georgia, serif;
+    overflow-x: hidden;
+  }
+
+  /* ── CIRCUIT PATTERN BACKGROUND ── */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(0,184,160,0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(0,119,204,0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 52px;
+    height: 68px;
+    background: rgba(8,12,16,0.9);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.45rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .nav-logo span { color: var(--teal); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--teal); }
+
+  .nav-cta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--teal);
+    border: 1px solid var(--teal);
+    padding: 9px 22px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .nav-cta:hover {
+    background: var(--teal);
+    color: var(--black);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 52px 80px;
+    overflow: hidden;
+  }
+
+  /* Animated connection lines */
+  .hero-lines {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .hero-lines svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.07;
+  }
+
+  .hero-layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .hero-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--teal);
+  }
+
+  .hero-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 30px;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+
+  .hero-title .accent { color: var(--teal); }
+
+  .hero-title .serif {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    font-size: 0.7em;
+    color: var(--light);
+    display: block;
+    letter-spacing: 0;
+    margin-top: 6px;
+  }
+
+  .hero-body {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text);
+    margin-bottom: 44px;
+    max-width: 520px;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+
+  .btn-primary {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--teal);
+    color: var(--black);
+    border: none;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-primary:hover { background: var(--teal2); transform: translateY(-1px); }
+
+  .btn-outline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--light);
+    border: 1px solid var(--border);
+    padding: 14px 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-outline:hover { border-color: var(--teal); color: var(--teal); }
+
+  /* Hero card panel */
+  .hero-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 36px;
+    animation: fadeUp 0.8s 0.4s ease both;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--teal), var(--blue));
+  }
+
+  .hero-card-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 22px;
+  }
+
+  .service-pill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .service-pill {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: var(--ink);
+    border: 1px solid var(--border);
+    transition: border-color 0.2s;
+  }
+
+  .service-pill:hover { border-color: rgba(0,184,160,0.4); }
+
+  .pill-icon {
+    font-size: 1.1rem;
+    min-width: 24px;
+    text-align: center;
+  }
+
+  .pill-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--light);
+  }
+
+  .pill-sub {
+    font-size: 0.68rem;
+    color: var(--muted);
+    margin-top: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-card-cta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-card-cta span { color: var(--teal); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 0 52px;
+  }
+
+  /* ── SECTIONS ── */
+  section { padding: 96px 52px; position: relative; z-index: 1; }
+
+  .section-header {
+    margin-bottom: 56px;
+  }
+
+  .section-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-eyebrow::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: var(--teal);
+  }
+
+  .section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .section-title em {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    color: var(--light);
+    font-size: 0.75em;
+    display: block;
+    letter-spacing: 0;
+    margin-top: 6px;
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--ink); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2px;
+  }
+
+  .service-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 40px 36px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--teal), var(--blue));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+
+  .service-card:hover {
+    border-color: rgba(0,184,160,0.25);
+    transform: translateY(-3px);
+  }
+
+  .service-card:hover::after { transform: scaleX(1); }
+
+  .service-icon {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .service-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--white);
+    margin-bottom: 14px;
+  }
+
+  .service-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 22px;
+  }
+
+  .service-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .service-features li {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .service-features li::before {
+    content: '→';
+    color: var(--teal);
+    font-size: 0.7rem;
+  }
+
+  /* ── WHY ── */
+  #why { background: var(--black); }
+
+  .why-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .why-left p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+
+  .why-left blockquote {
+    border-left: 2px solid var(--teal);
+    padding: 16px 24px;
+    margin: 32px 0;
+    background: var(--panel);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--light);
+    line-height: 1.7;
+  }
+
+  .credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 32px;
+  }
+
+  .cred-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 18px 20px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    transition: border-color 0.2s;
+  }
+
+  .cred-item:hover { border-color: rgba(0,184,160,0.3); }
+
+  .cred-icon { font-size: 1.1rem; min-width: 24px; margin-top: 1px; }
+
+  .cred-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: var(--light);
+    line-height: 1.5;
+  }
+
+  .cred-sub {
+    color: var(--muted);
+    font-size: 0.63rem;
+    margin-top: 3px;
+  }
+
+  /* ── PROCESS ── */
+  #process { background: var(--ink); }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    counter-reset: steps;
+  }
+
+  .step {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 36px 28px;
+    position: relative;
+    counter-increment: steps;
+  }
+
+  .step::before {
+    content: counter(steps, decimal-leading-zero);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(0,184,160,0.08);
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+  .step-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .step-text {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    color: var(--muted);
+  }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--black); }
+
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 72px;
+    align-items: start;
+  }
+
+  .contact-left p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 36px;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .contact-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 16px 18px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+  }
+
+  .c-icon { font-size: 1rem; color: var(--teal); min-width: 22px; margin-top: 1px; }
+
+  .c-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 3px;
+  }
+
+  .c-value {
+    font-size: 0.9rem;
+    color: var(--light);
+  }
+
+  /* Form */
+  .contact-form {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 40px;
+    position: relative;
+  }
+
+  .contact-form::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--teal), var(--blue));
+  }
+
+  .form-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin-bottom: 28px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+
+  .field label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    background: var(--ink);
+    border: 1px solid var(--border);
+    color: var(--white);
+    padding: 11px 14px;
+    font-family: 'Lora', serif;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    appearance: none;
+  }
+
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus { border-color: var(--teal); }
+
+  .field textarea { resize: vertical; min-height: 110px; }
+  .field select { cursor: pointer; }
+  .field select option { background: var(--panel); }
+
+  .field.full { grid-column: 1 / -1; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    border-top: 1px solid var(--border);
+    padding: 40px 52px;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .footer-logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--white);
+  }
+
+  .footer-logo span { color: var(--teal); }
+
+  .footer-tagline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+
+  .footer-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--teal); }
+
+  .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-copy {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  /* ── SCROLL FADE ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    .hero { padding: 100px 24px 60px; }
+    .hero-layout { grid-template-columns: 1fr; gap: 40px; }
+    .hero-card { display: none; }
+    section { padding: 60px 24px; }
+    .why-layout { grid-template-columns: 1fr; gap: 40px; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+    .form-grid { grid-template-columns: 1fr; }
+    footer { padding: 32px 24px; }
+    .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+    .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+    .divider { margin: 0 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">Coast<span>Link</span> Solutions</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Free Consultation</a>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-lines">
+    <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="200" x2="1200" y2="200" stroke="#00b8a0" stroke-width="0.5"/>
+      <line x1="0" y1="500" x2="1200" y2="500" stroke="#00b8a0" stroke-width="0.5"/>
+      <line x1="300" y1="0" x2="300" y2="700" stroke="#00b8a0" stroke-width="0.5"/>
+      <line x1="900" y1="0" x2="900" y2="700" stroke="#00b8a0" stroke-width="0.5"/>
+      <circle cx="300" cy="200" r="5" fill="#00b8a0" opacity="0.6"/>
+      <circle cx="900" cy="200" r="5" fill="#00b8a0" opacity="0.6"/>
+      <circle cx="300" cy="500" r="5" fill="#00b8a0" opacity="0.6"/>
+      <circle cx="900" cy="500" r="5" fill="#00b8a0" opacity="0.6"/>
+      <line x1="300" y1="200" x2="900" y2="500" stroke="#00b8a0" stroke-width="0.5" stroke-dasharray="8 6"/>
+      <line x1="900" y1="200" x2="300" y2="500" stroke="#00b8a0" stroke-width="0.5" stroke-dasharray="8 6"/>
+      <circle cx="600" cy="350" r="8" fill="none" stroke="#00b8a0" stroke-width="1"/>
+      <circle cx="150" cy="100" r="3" fill="#0077cc" opacity="0.5"/>
+      <circle cx="1050" cy="600" r="3" fill="#0077cc" opacity="0.5"/>
+      <line x1="150" y1="100" x2="300" y2="200" stroke="#0077cc" stroke-width="0.5" opacity="0.5"/>
+      <line x1="1050" y1="600" x2="900" y2="500" stroke="#0077cc" stroke-width="0.5" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <div class="hero-layout">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Mobile, Alabama · Full-Service IT Partner</div>
+      <h1 class="hero-title">
+        One Partner.<br>
+        <span class="accent">Every System.</span>
+        <span class="serif">Websites. Phones. Networks. Support.</span>
+      </h1>
+      <p class="hero-body">
+        CoastLink Solutions handles everything that keeps your small business running and connected — from a professional website to your phone system, internet infrastructure, and ongoing IT support. Stop juggling vendors. Start calling one number.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get a Free Consultation</a>
+        <a href="#services" class="btn-outline">See What We Do</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-card-label">// Services at a glance</div>
+      <div class="service-pill-list">
+        <div class="service-pill">
+          <div class="pill-icon">🌐</div>
+          <div>
+            <div class="pill-text">Web Design</div>
+            <div class="pill-sub">From $250 · Live in 24 hrs</div>
+          </div>
+        </div>
+        <div class="service-pill">
+          <div class="pill-icon">📞</div>
+          <div>
+            <div class="pill-text">VoIP Phone Systems</div>
+            <div class="pill-sub">Hosted · On-premise · Hybrid</div>
+          </div>
+        </div>
+        <div class="service-pill">
+          <div class="pill-icon">🔌</div>
+          <div>
+            <div class="pill-text">Network Infrastructure</div>
+            <div class="pill-sub">Cabling · WiFi · Switching</div>
+          </div>
+        </div>
+        <div class="service-pill">
+          <div class="pill-icon">🛠</div>
+          <div>
+            <div class="pill-text">IT Support</div>
+            <div class="pill-sub">Ongoing maintenance & help desk</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card-cta">
+        <span>Mobile & Gulf Coast Region</span>
+        <span>→ Free consult</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header fade-up">
+    <div class="section-eyebrow">What We Do</div>
+    <h2 class="section-title">
+      Everything Your Business Needs
+      <em>Under one roof, one invoice, one call.</em>
+    </h2>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <span class="service-icon">🌐</span>
+      <div class="service-name">Web Design</div>
+      <p class="service-desc">Professional websites built fast and priced for small businesses. No bloat, no monthly surprises — just a clean site that works.</p>
+      <ul class="service-features">
+        <li>Static sites from $250</li>
+        <li>Contact forms from $300</li>
+        <li>Live within 24 hours</li>
+        <li>Hosted on Cloudflare — blazing fast</li>
+        <li>Car lot & inventory sites available</li>
+      </ul>
+    </div>
+    <div class="service-card fade-up" style="transition-delay:0.08s">
+      <span class="service-icon">📞</span>
+      <div class="service-name">VoIP Phone Systems</div>
+      <p class="service-desc">Enterprise-grade phone systems sized for small businesses. Former lead engineer for the largest privately owned telecom in the country — this is our deepest expertise.</p>
+      <ul class="service-features">
+        <li>Hosted, on-premise & hybrid</li>
+        <li>BroadSoft / Sangoma platforms</li>
+        <li>Auto-attendants & call routing</li>
+        <li>Remote & multi-location support</li>
+        <li>Number porting & migration</li>
+      </ul>
+    </div>
+    <div class="service-card fade-up" style="transition-delay:0.16s">
+      <span class="service-icon">🔌</span>
+      <div class="service-name">Network Infrastructure</div>
+      <p class="service-desc">Structured cabling, wireless networks, and switching built to last. We've run cable in everything from medical offices to warehouses.</p>
+      <ul class="service-features">
+        <li>Cat5e / Cat6 / Cat6A cabling</li>
+        <li>Enterprise WiFi deployment</li>
+        <li>Firewall & router configuration</li>
+        <li>VLAN segmentation</li>
+        <li>ISP coordination & fiber builds</li>
+      </ul>
+    </div>
+    <div class="service-card fade-up" style="transition-delay:0.24s">
+      <span class="service-icon">🛠</span>
+      <div class="service-name">IT Support</div>
+      <p class="service-desc">Ongoing support so you can focus on your business, not your tech. We fix real problems — not just reboot your equipment and bill you for it.</p>
+      <ul class="service-features">
+        <li>Remote & on-site support</li>
+        <li>Workstation setup & maintenance</li>
+        <li>Server & NAS management</li>
+        <li>Security & access control</li>
+        <li>Vendor coordination</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHY -->
+<section id="why">
+  <div class="why-layout">
+    <div class="why-left fade-up">
+      <div class="section-eyebrow">About CoastLink</div>
+      <h2 class="section-title" style="margin-bottom:28px;">
+        Not Another IT Guy.
+        <em>Two decades in the trenches.</em>
+      </h2>
+      <p>CoastLink Solutions was founded by Steven Mann — a technician who spent over 20 years building, securing, and rescuing mission-critical infrastructure. As the former lead support engineer for the largest privately owned telecom company in the country, Steven has architected communication systems that most consultants have never seen.</p>
+      <blockquote>"I founded CoastLink because too many good businesses were getting burned by bad support. We're not the cheapest — and that's on purpose."</blockquote>
+      <p>We serve small businesses across Mobile and the Gulf Coast who can't afford downtime, failure, or excuses. When you call CoastLink, you get the engineer, not a help desk ticket.</p>
+    </div>
+
+    <div class="credentials fade-up" style="transition-delay:0.15s">
+      <div class="section-eyebrow" style="margin-bottom:20px;">Why Choose Us</div>
+      <div class="cred-item">
+        <div class="cred-icon">🏗</div>
+        <div>
+          <div class="cred-text">20+ Years Field Experience</div>
+          <div class="cred-sub">Telecom, networking, cabling, VoIP — we've done it all at scale</div>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">📡</div>
+        <div>
+          <div class="cred-text">BroadSoft / Sangoma Expertise</div>
+          <div class="cred-sub">Deep platform knowledge most resellers don't have</div>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">⚡</div>
+        <div>
+          <div class="cred-text">Websites Live in 24 Hours</div>
+          <div class="cred-sub">We've built a delivery system that's fast without cutting corners</div>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">🤝</div>
+        <div>
+          <div class="cred-text">One Point of Contact</div>
+          <div class="cred-sub">Phones, web, network, support — one partner, one number to call</div>
+        </div>
+      </div>
+      <div class="cred-item">
+        <div class="cred-icon">📍</div>
+        <div>
+          <div class="cred-text">Locally Owned, Mobile AL</div>
+          <div class="cred-sub">We live and work here — your success is personal to us</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-header fade-up">
+    <div class="section-eyebrow">How It Works</div>
+    <h2 class="section-title">Simple Process.<em>No Surprises.</em></h2>
+  </div>
+
+  <div class="process-steps">
+    <div class="step fade-up">
+      <div class="step-title">Free Consultation</div>
+      <p class="step-text">We talk through your current setup, what's not working, and what you actually need. No obligation, no sales pressure.</p>
+    </div>
+    <div class="step fade-up" style="transition-delay:0.1s">
+      <div class="step-title">Clear Proposal</div>
+      <p class="step-text">You get a straight-forward quote with no surprises. We'll tell you exactly what you're getting and what it costs.</p>
+    </div>
+    <div class="step fade-up" style="transition-delay:0.2s">
+      <div class="step-title">Fast Delivery</div>
+      <p class="step-text">We move quickly. Websites go live within 24 hours. Network projects get scheduled and completed on time.</p>
+    </div>
+    <div class="step fade-up" style="transition-delay:0.3s">
+      <div class="step-title">Ongoing Support</div>
+      <p class="step-text">We don't disappear after the job. CoastLink is your long-term partner for everything that keeps your business running.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-layout">
+    <div class="contact-left fade-up">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title" style="margin-bottom:24px;">Let's Talk<em>Free consultation, no pressure.</em></h2>
+      <p>Whether you need a website by tomorrow, a new phone system, or just want someone to look at your network and tell you what's actually wrong — we're happy to start with a conversation.</p>
+
+      <div class="contact-details">
+        <div class="contact-row">
+          <div class="c-icon">📞</div>
+          <div>
+            <div class="c-label">Phone</div>
+            <div class="c-value">(251) 555-0000</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">✉️</div>
+          <div>
+            <div class="c-label">Email</div>
+            <div class="c-value">info@coastlinksolutions.com</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">📍</div>
+          <div>
+            <div class="c-label">Service Area</div>
+            <div class="c-value">Mobile, AL & Gulf Coast Region</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">🕐</div>
+          <div>
+            <div class="c-label">Response Time</div>
+            <div class="c-value">Same business day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form fade-up" style="transition-delay:0.15s">
+      <div class="form-title">Request a Consultation</div>
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-grid">
+          <div class="field">
+            <label>First Name</label>
+            <input type="text" placeholder="James" required/>
+          </div>
+          <div class="field">
+            <label>Last Name</label>
+            <input type="text" placeholder="Williams" required/>
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="tel" placeholder="(251) 555-0000"/>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="you@yourbusiness.com" required/>
+          </div>
+          <div class="field">
+            <label>Business Name</label>
+            <input type="text" placeholder="Your Business Name"/>
+          </div>
+          <div class="field">
+            <label>I Need Help With...</label>
+            <select>
+              <option value="">Select a service</option>
+              <option>Website Design</option>
+              <option>VoIP Phone System</option>
+              <option>Network / Cabling</option>
+              <option>IT Support</option>
+              <option>Multiple Services</option>
+              <option>Not Sure — Just Exploring</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label>Tell Us About Your Situation</label>
+            <textarea placeholder="What's going on? What do you need? No detail too small."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary" id="submitBtn">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Coast<span>Link</span> Solutions</div>
+      <div class="footer-tagline">Websites · VoIP · Networking · IT Support · Mobile, AL</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 CoastLink Solutions LLC · Mobile, AL · All Rights Reserved</div>
+    <div class="footer-copy">Built by CoastLink Solutions</div>
+  </div>
+</footer>
+
+<script>
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Form
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = '✓ Message Sent!';
+  btn.style.background = '#00b8a0';
+  btn.style.color = '#080c10';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = 'Send Message →';
+    btn.style.background = '';
+    btn.style.color = '';
+    btn.disabled = false;
+    e.target.reset();
+  }, 4000);
+}
+</script>
+</body>
+</html>
