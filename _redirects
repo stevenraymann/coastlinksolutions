@@ -1,7 +1,0 @@
-# Redirect www to apex
-https://www.coastlinksolutions.com/* https://coastlinksolutions.com/:splat 301
-
-# Trailing slash cleanup
-/services/   /services  301
-/contact/    /contact   301
-/about/      /about     301
