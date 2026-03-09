@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080c10"/>
+      <stop offset="100%" style="stop-color:#0d1a2a"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00b8a0"/>
+      <stop offset="100%" style="stop-color:#0077cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="180" x2="1200" y2="180" stroke="#00b8a0" stroke-width="0.5" opacity="0.1"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#00b8a0" stroke-width="0.5" opacity="0.1"/>
+  <line x1="350" y1="0" x2="350" y2="630" stroke="#00b8a0" stroke-width="0.5" opacity="0.1"/>
+  <line x1="850" y1="0" x2="850" y2="630" stroke="#00b8a0" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- Node dots -->
+  <circle cx="350" cy="180" r="5" fill="#00b8a0" opacity="0.4"/>
+  <circle cx="850" cy="180" r="5" fill="#00b8a0" opacity="0.4"/>
+  <circle cx="350" cy="450" r="5" fill="#00b8a0" opacity="0.4"/>
+  <circle cx="850" cy="450" r="5" fill="#00b8a0" opacity="0.4"/>
+  <line x1="350" y1="180" x2="850" y2="450" stroke="#00b8a0" stroke-width="0.5" stroke-dasharray="6 5" opacity="0.15"/>
+  <line x1="850" y1="180" x2="350" y2="450" stroke="#00b8a0" stroke-width="0.5" stroke-dasharray="6 5" opacity="0.15"/>
+
+  <!-- Top accent bar -->
+  <rect x="80" y="80" width="160" height="3" fill="url(#bar)"/>
+
+  <!-- Logo / company name -->
+  <text x="80" y="300" font-family="Arial Black, Arial, sans-serif" font-weight="900"
+        font-size="88" letter-spacing="2" fill="#eef2f7" text-anchor="start">COAST</text>
+  <text x="80" y="390" font-family="Arial Black, Arial, sans-serif" font-weight="900"
+        font-size="88" letter-spacing="2" fill="#00b8a0" text-anchor="start">LINK</text>
+
+  <!-- Divider -->
+  <rect x="80" y="415" width="600" height="2" fill="#1e2833"/>
+
+  <!-- Tagline -->
+  <text x="80" y="460" font-family="Arial, sans-serif" font-size="26"
+        fill="#8a9ab0" letter-spacing="3">SOLUTIONS</text>
+
+  <!-- Service pills -->
+  <rect x="80" y="500" width="170" height="36" rx="2" fill="#131920" stroke="#1e2833" stroke-width="1"/>
+  <text x="165" y="523" font-family="Arial, sans-serif" font-size="14" fill="#00b8a0"
+        text-anchor="middle" letter-spacing="1">WEB DESIGN</text>
+
+  <rect x="264" y="500" width="170" height="36" rx="2" fill="#131920" stroke="#1e2833" stroke-width="1"/>
+  <text x="349" y="523" font-family="Arial, sans-serif" font-size="14" fill="#00b8a0"
+        text-anchor="middle" letter-spacing="1">VOIP</text>
+
+  <rect x="448" y="500" width="170" height="36" rx="2" fill="#131920" stroke="#1e2833" stroke-width="1"/>
+  <text x="533" y="523" font-family="Arial, sans-serif" font-size="14" fill="#00b8a0"
+        text-anchor="middle" letter-spacing="1">NETWORKING</text>
+
+  <rect x="632" y="500" width="170" height="36" rx="2" fill="#131920" stroke="#1e2833" stroke-width="1"/>
+  <text x="717" y="523" font-family="Arial, sans-serif" font-size="14" fill="#00b8a0"
+        text-anchor="middle" letter-spacing="1">IT SUPPORT</text>
+
+  <!-- Right side accent text -->
+  <text x="1120" y="290" font-family="Arial, sans-serif" font-size="18"
+        fill="#4a5a6a" text-anchor="end" letter-spacing="3">MOBILE, AL</text>
+  <text x="1120" y="320" font-family="Arial, sans-serif" font-size="18"
+        fill="#4a5a6a" text-anchor="end" letter-spacing="3">GULF COAST REGION</text>
+  <text x="1120" y="370" font-family="Arial Black, Arial, sans-serif" font-size="22"
+        fill="#eef2f7" text-anchor="end" letter-spacing="1">coastlinksolutions.com</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="622" width="1200" height="8" fill="url(#bar)"/>
+</svg>

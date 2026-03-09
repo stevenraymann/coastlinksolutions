@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"/>
 <title>CoastLink Solutions — Websites, VoIP & IT Services | Mobile, AL</title>
 <meta name="description" content="CoastLink Solutions builds websites from $250, installs VoIP phone systems, and handles network infrastructure and IT support for small businesses in Mobile, AL and the Gulf Coast."/>
 
@@ -14,7 +15,7 @@
 <meta property="og:url" content="https://coastlinksolutions.com/"/>
 <meta property="og:title" content="CoastLink Solutions — Websites, VoIP & IT Services | Mobile, AL"/>
 <meta property="og:description" content="One partner for everything that keeps your small business running. Websites from $250, VoIP phone systems, network infrastructure, and IT support. Mobile, AL."/>
-<meta property="og:image" content="https://coastlinksolutions.com/og-image.png"/>
+<meta property="og:image" content="https://coastlinksolutions.com/assets/og-image.svg"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="CoastLink Solutions"/>
 
@@ -22,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="CoastLink Solutions — Websites, VoIP & IT Services | Mobile, AL"/>
 <meta name="twitter:description" content="One partner for everything that keeps your small business running. Websites from $250, VoIP phone systems, network infrastructure, and IT support. Mobile, AL."/>
-<meta name="twitter:image" content="https://coastlinksolutions.com/og-image.png"/>
+<meta name="twitter:image" content="https://coastlinksolutions.com/assets/og-image.svg"/>
 
 <!-- Local SEO -->
 <meta name="geo.region" content="US-AL"/>
@@ -1183,31 +1184,31 @@
 
     <div class="contact-form fade-up" style="transition-delay:0.15s">
       <div class="form-title">Request a Consultation</div>
-      <form onsubmit="handleSubmit(event)">
+      <form id="contactForm" onsubmit="handleSubmit(event)">
         <div class="form-grid">
           <div class="field">
             <label>First Name</label>
-            <input type="text" placeholder="James" required/>
+            <input type="text" name="firstName" placeholder="James" required/>
           </div>
           <div class="field">
             <label>Last Name</label>
-            <input type="text" placeholder="Williams" required/>
+            <input type="text" name="lastName" placeholder="Williams" required/>
           </div>
           <div class="field">
             <label>Phone</label>
-            <input type="tel" placeholder="(251) 555-0000"/>
+            <input type="tel" name="phone" placeholder="(251) 555-0000"/>
           </div>
           <div class="field">
             <label>Email</label>
-            <input type="email" placeholder="you@yourbusiness.com" required/>
+            <input type="email" name="email" placeholder="you@yourbusiness.com" required/>
           </div>
           <div class="field">
             <label>Business Name</label>
-            <input type="text" placeholder="Your Business Name"/>
+            <input type="text" name="business" placeholder="Your Business Name"/>
           </div>
           <div class="field">
             <label>I Need Help With...</label>
-            <select>
+            <select name="service">
               <option value="">Select a service</option>
               <option>Website Design</option>
               <option>VoIP Phone System</option>
@@ -1219,7 +1220,7 @@
           </div>
           <div class="field full">
             <label>Tell Us About Your Situation</label>
-            <textarea placeholder="What's going on? What do you need? No detail too small."></textarea>
+            <textarea name="message" placeholder="What's going on? What do you need? No detail too small."></textarea>
           </div>
         </div>
         <button type="submit" class="btn-primary" id="submitBtn">Send Message →</button>
@@ -1257,20 +1258,48 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
 // Form
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
-  btn.textContent = '✓ Message Sent!';
-  btn.style.background = '#00b8a0';
-  btn.style.color = '#080c10';
+  const form = document.getElementById('contactForm');
+
+  btn.textContent = 'Sending...';
   btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = 'Send Message →';
-    btn.style.background = '';
-    btn.style.color = '';
-    btn.disabled = false;
-    e.target.reset();
-  }, 4000);
+
+  const data = Object.fromEntries(new FormData(form).entries());
+
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = '#00b8a0';
+      btn.style.color = '#080c10';
+      form.reset();
+      setTimeout(() => {
+        btn.textContent = 'Send Message →';
+        btn.style.background = '';
+        btn.style.color = '';
+        btn.disabled = false;
+      }, 4000);
+    } else {
+      throw new Error('Server error');
+    }
+  } catch (err) {
+    btn.textContent = 'Something went wrong — please call us';
+    btn.style.background = '#c0392b';
+    btn.style.color = '#fff';
+    setTimeout(() => {
+      btn.textContent = 'Send Message →';
+      btn.style.background = '';
+      btn.style.color = '';
+      btn.disabled = false;
+    }, 5000);
+  }
 }
 </script>
 </body>
