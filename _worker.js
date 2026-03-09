@@ -16,9 +16,14 @@ export default {
     // CORS preflight
     if (request.method === 'OPTIONS') return corsResponse(204);
 
-    // Only handle POST /api/contact
-    if (request.method !== 'POST' || url.pathname !== '/api/contact') {
-      return new Response('Not found', { status: 404 });
+    // Pass everything except /api/contact through to static assets
+    if (url.pathname !== '/api/contact') {
+      return env.ASSETS.fetch(request);
+    }
+
+    // Only accept POST for the contact endpoint
+    if (request.method !== 'POST') {
+      return jsonError(405, 'Method not allowed');
     }
 
     let body;
